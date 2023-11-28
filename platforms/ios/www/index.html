@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enricozon 2.0</title>
+    <link rel="icon" href="immagini/loghi/logo.jpeg">
+    <link rel="stylesheet" href="tag.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tag-red.css">
+    <link rel="stylesheet" href="tag-green.css">
+    <link rel="stylesheet" href="tag-purple.css">
+</head>
+<body>
+
+<button class="open-btn" onclick="openNav()">☰</button>
+
+<div class="sidebar" id="mySidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+    <a href="util/about/index.html">About</a>
+    <a href="util/login/index.html">Login</a>
+    <a href="https://instagram.com/enricozon">Instagram</a>
+    <a href="https://discord.gg/kGK8BNUEwV">Discord</a>
+    <a href="https://whatsapp.com/channel/0029Va8G3gGAu3aM27dYtF1V">WhatsApp</a>
+    <a href="mailto:enricozon@cranci.xyz">Contattaci</a>
+    <a href="util/time/index.html">Time Machine</a>
+    <a href="util/bottoni/bottoni.html">Link Utili</a>
+    <a href="game/index.html">MiniGame</a>
+</div>
+
+<div class="content">
+    <img class="img1" src="immagini/loghi/enricozonbf.png">
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Cerca un prodotto..." oninput="filterProducts()">
+        <button type="submit" id="search-button">Cerca</button>
+    </div>
+
+
+    <div class="image-container">
+
+    <a href="prodotti/mandarino-enricozon/index.html">
+        <div class="product-badge">Più Venduto</div>
+    </a>
+
+        <a href="prodotti/mandarino-enricozon/index.html">
+        <img class="img2" src="immagini/mandarino.jpg">
+        <div class="image-description">
+            <p>Mandarino Fresco Km 0</p>
+            <p>$104.00</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/salvini-enricozon/index.html">
+        <img class="img2" src="immagini/salvini.jpg">
+        <div class="image-description">
+            <p>Matteo Salvini</p>
+            <p>$69.00</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/winx-enricozon/index.html">
+        <img class="img2" src="immagini/bloomwinxx.png">
+        <div class="image-description">
+            <p>Bloom Winx</p>
+            <p>$208.00</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/davide-enricozon/index.html">
+        <img class="img2" src="immagini/davidegarufi.jpg">
+        <div class="image-description">
+            <p>Davide Garufi</p>
+            <p>$10,4</p>
+        </div>
+    </a>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/ciccio-enricozon/index.html">
+        <img class="img2" src="immagini/ciccio.jpg">
+        <div class="image-description">
+            <p>Cicciogamer89</p>
+            <p>$89</p>
+        </div>
+    </a>
+    </div>
+    
+    <div class="image-container">
+        <a href="prodotti/sigma-enricozon/index.html">
+        <img class="img2" src="immagini/sigma.jpg">
+        <div class="image-description">
+            <p>Sigma</p>
+            <p>$7300</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/saix-enricozon/index.html">
+        <img class="img2" src="immagini/saix.jpg">
+        <div class="image-description">
+            <p>Saix</p>
+            <p>$2004</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/amongus-enricozon/index.html">
+        <img class="img2" src="immagini/amongus.jpg">
+        <div class="image-description">
+            <p>Among Us</p>
+            <p>$80</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/mrbeast-enricozon/index.html">
+        <img class="img2" src="immagini/mrbeast.jpg">
+        <div class="image-description">
+            <p>Mr Beast</p>
+            <p>$10.000.000</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/nokia-enricozon/index.html">
+            <div class="product-badge-green">Tecnologia</div></a>
+    
+        <a href="prodotti/nokia-enricozon/index.html">
+        <img class="img2" src="immagini/nokia3310.jpg">
+        <div class="image-description">
+            <p>Nokia 3310</p>
+            <p>$3310</p>
+        </a>
+        </div>
+    
+</div>
+    <div class="image-container">
+        <a href="prodotti/trump-enricozon/index.html">
+        <img class="img2" src="immagini/trump.jpg">
+        <div class="image-description">
+            <p>Donald Trump</p>
+            <p>$45</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/terra-enricozon/index.html">
+        <img class="img2" src="immagini/terra.jpg">
+        <div class="image-description">
+            <p>Pianeta Terra</p>
+            <p>Gratis</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/schettino-enricozon/index.html">
+        <img class="img2" src="immagini/schettino.jpg">
+        <div class="image-description">
+            <p>Francesco Schettino</p>
+            <p>$2012</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/trucchi-enricozon/index.html">
+        <img class="img2" src="immagini/trucchi.jpg">
+        <div class="image-description">
+            <p>Trucchi</p>
+            <p>$104</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/ginevra-enricozon/index.html">
+        <img class="img2" src="immagini/ginevra.jpg">
+        <div class="image-description">
+            <p>La Giraffa Ginevra</p>
+            <p>$100.000.000</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/paletta-enricozon/index.html">
+        <img class="img2" src="immagini/paletta.jpg">
+        <div class="image-description">
+            <p>Paletta per le mosche</p>
+            <p>$11</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/maranza-enricozon/index.html">
+        <img class="img2" src="immagini/maranza.jpg">
+        <div class="image-description">
+            <p>I Maranza</p>
+            <p>$0,01</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/roberto-enricozon/index.html">
+        <img class="img2" src="immagini/roberto.jpg">
+        <div class="image-description">
+            <p>Il Gatto Roberto</p>
+            <p>$1.000.000</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/misterybox-enricozon/index.html">
+        <img class="img2" src="immagini/paccoenricozon.png">
+        <div class="image-description">
+            <p>Mistery Box</p>
+            <p>$99</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/alecosta-enricozon/index.html">
+        <img class="img2" src="immagini/alecosta.jpg">
+        <div class="image-description">
+            <p>Ale Costa</p>
+            <p>$1,49</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/cricetoarmando-enricozon/index.html">
+        <img class="img2" src="immagini/cricetoarmando.jpg">
+        <div class="image-description">
+            <p>Il Criceto Armando</p>
+            <p>$1000</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/pietro-enricozon/index.html">
+        <img class="img2" src="immagini/pietro.jpg">
+        <div class="image-description">
+            <p>Pietro La Supposta</p>
+            <p>$20</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+
+    <a href="prodotti/divano-enricozon/index.html">
+        <div class="product-badge">Iper Comodo</div>
+    </a> 
+
+        <a href="prodotti/divano-enricozon/index.html">
+        <img class="img2" src="immagini/divano-ippopotamo.jpg">
+        <div class="image-description">
+            <p>Divano Ippopotamo</p>
+            <p>$95.000</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/adam-enricozon/index.html">
+        <img class="img2" src="immagini/adam.jpg">
+        <div class="image-description">
+            <p>Adam Il Nero</p>
+            <p>$104</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/travis-enricozon/index.html">
+        <img class="img2" src="immagini/travis.jpg">
+        <div class="image-description">
+            <p>Travis Scott</p>
+            <p>$1991</p>
+        </a>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <a href="prodotti/lee-enricozon/index.html">
+        <img class="img2" src="immagini/lee.jpg">
+        <div class="image-description">
+            <p>Lee La Cinese</p>
+            <p>$2</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/deluca-enricozon/index.html">
+        <img class="img2" src="immagini/deluca.jpg">
+        <div class="image-description">
+            <p>Vincenzo De Luca</p>
+            <p>$35</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/calabrese-enricozon/index.html">
+        <img class="img2" src="immagini/orangotango.jpg">
+        <div class="image-description">
+            <p>Il Calabrese</p>
+            <p>$5</p>
+        </a>
+        </div>
+    </div>
+
+
+    <div class="image-container">
+        <a href="prodotti/spooderman-enricozon/index.html">
+        <img class="img2" src="immagini/spooderman.jpg">
+        <div class="image-description">
+            <p>Spiderman autistico</p>
+            <p>$104</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/ps6-enricozon/index.html">
+            <div class="product-badge-green">Tecnologia</div></a>
+        <a href="prodotti/ps6-enricozon/index.html">
+        <img class="img2" src="immagini/ps6.jpg">
+        <div class="image-description">
+            <p>Playstation 6</p>
+            <p>$666</p>
+        </div>
+    </a>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/XboxZ-enricozon/index.html">
+            <div class="product-badge-green">Tecnologia</div></a>
+        <a href="prodotti/XboxZ-enricozon/index.html">
+        <img class="img2" src="immagini/xboxseriez.jpg">
+               <div class="image-description">
+            <p>Xbox Series Z</p>
+            <p>$555</p>
+        </a>
+        </div>
+    </div>
+    
+    
+    <div class="image-container">
+        <a href="prodotti/Nintendo2-enricozon/index.html">
+            <div class="product-badge-green">Tecnologia</div></a>
+        <a href="prodotti/Nintendo2-enricozon/index.html">
+        <img class="img2" src="immagini/nintendoswitch2.jpg">
+               <div class="image-description">
+            <p>Nintendo Switch 2</p>
+            <p>$6060</p>
+       
+       </div>
+        </a>
+    </div>
+    
+<div class="image-container">
+    <a href="prodotti/iphone16-enricozon/index.html">
+        <div class="product-badge-green">Tecnologia</div></a>
+    
+        <a href="prodotti/iphone16-enricozon/index.html">
+        <img class="img2" src="immagini/iphone 16.jpg">
+               <div class="image-description">
+            <p>iPhone 16</p>
+            <p>$2000</p>
+               </div>
+        </a>
+    </div>
+    
+    <div class="image-container">
+        <a href="prodotti/sumung25-enricozon/index.html">
+            <div class="product-badge-green">Tecnologia</div></a>
+   
+        <a href="prodotti/sumung25-enricozon/index.html">
+        <img class="img2" src="immagini/samsungs25ultra.png">
+        <div class="image-description">
+            <p>Samsung Galaxy S25 Ultra</p>
+            <p>$1999.99</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/obama-enricozon/index.html">
+            <div class="product-badge">Più Nero</div>
+        </a>
+        <a href="prodotti/obama-enricozon/index.html">
+        <img class="img2" src="immagini/obama.jpg">
+        <div class="image-description">
+            <p>Barack Obama</p>
+            <p>$44</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/ViaLattea-enricozon/index.html">
+        <img class="img2" src="immagini/vialattea.jpg">
+               <div class="image-description">
+            <p>Via Lattea</p>
+            <p>$1</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/gelato-enricozon/index.html">
+        <img class="img2" src="immagini/gelato.jpg">
+        <div class="image-description">
+            <p>Bing Chilling</p>
+            <p>$19</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/boogiedown-enricozon/index.html">
+            <div class="product-badge-red">Da Fortnite</div></a>
+    <div class="image-container">
+        <a href="prodotti/boogiedown-enricozon/index.html">
+        <img class="img2" src="immagini/boogiedown.jpg">
+        <div class="image-description">
+            <p>Boogie Bomb</p>
+            <p><img src="prezzi/vbuck.png" class="vbuck" alt="Icona V-Buck">70</p>
+        </a>
+        </div>
+    </div>
+</div>
+    <div class="image-container">
+        <a href="prodotti/venenoL-enricozon/index.html">
+        <img class="img2" src="immagini/venenol.jpg">
+        <div class="image-description">
+            <p>Lamborghini Veneno Roadster</p>
+            <p>$5 Mln</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/Hog-enricozon/index.html">
+            <div class="product-badge-purple">Mondo Clash</div></a>
+    
+        <a href="prodotti/Hog-enricozon/index.html">
+            <img class="img2" src="immagini/hogrider.png">
+            <div class="image-description">
+                <p>Hog Rider</p>
+                <p><img src="prezzi/clash-royale-elixir-icon.png.png" class="elisir" alt="Icona Elisir">4</p>
+            </div>
+        </a>
+    </div>
+    
+
+    <div class="image-container">
+        <a href="prodotti/renagade-enricozon/index.html">
+            <div class="product-badge-red">Da Fortnite</div></a>
+        <a href="prodotti/renagade-enricozon/index.html">
+            <img class="img2" src="immagini/renegaderaider.jpg">
+            <div class="image-description">
+                <p>Renegade Raider</p>
+                <p><img src="prezzi/vbuck.png" class="vbuck" alt="Icona V-Buck">1200</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="image-container">
+        <a href="prodotti/Nickocado-enricozon/index.html">
+            <img class="img2" src="immagini/nickocado2.jpg">
+            <div class="image-description">
+                <p>NickoCado Avocado</p>
+                <p><img src="prezzi/clash-royale-elixir-icon.png.png" class="elisir" alt="Icona Elisir">143</p>
+            </div>
+        </a>
+    </div>
+
+    
+
+    <div class="image-container">
+        <a href="prodotti/Bellingham-enricozon/index.html">
+            <img class="img2" src="immagini/bellingham.jpg">
+            <div class="image-description">
+                <p>Bellingham</p>
+                <p>$5</p>
+            </a>
+            </div>
+        </div>
+
+
+
+    <div class="image-container">
+        <a href="prodotti/heichpee-enricozon/index.html">
+            <div class="product-badge-green">Tecnologia</div></a>
+    <a href="prodotti/heichpee-enricozon/index.html">
+    <img class="img2" src="immagini/heichpee.jpg">
+    <div class="image-description">
+        <p>HP Computer Portatile</p>
+        <p>$40</p>
+    </a>
+    </div>
+</div>
+
+<div class="image-container">
+
+    <a onclick="playAudio()">
+        <div class="product-badge">ARMA FINTA</div>
+    </a>
+
+    <a onclick="playAudio()">
+        <img class="img2" src="immagini/mk43.jpeg">
+        <div class="image-description">
+            <p>MK43</p>
+            <p>$9999999.00</p>
+        </div>
+    </a>
+
+    <audio id="audioPlayer" src="sound/gun.mp3"></audio>
+
+</div>
+
+<div class="image-container">
+    <a href="prodotti/canetazza-enricozon/index.html">
+    <img class="img2" src="immagini/dog-mug.jpg">
+    <div class="image-description">
+        <p>Cane Tazza</p>
+        <p>$7</p>
+    </a>
+    </div>
+</div>
+
+<div class="image-container">
+
+    <a onclick="playAudio2()">
+        <img class="img2" src="immagini/nyan.png">
+        <div class="image-description">
+            <p>Nyan Cat</p>
+            <p>$1190.88</p>
+        </div>
+        <audio id="aodio" src="sound/nyan.mp3"></audio>
+    </a>
+</div>
+
+
+<div id="chi-siamo"></div>
+    <div id="coming-soon"></div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("mySidebar").style.paddingLeft = "20px";
+        document.getElementById("mySidebar").style.transition = "0.5s";
+        document.getElementsByClassName("content")[0].style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("mySidebar").style.paddingLeft = "0";
+        document.getElementsByClassName("content")[0].style.marginLeft= "0";
+    }
+
+    function showText(text) {
+        var contentDiv = document.getElementById("chi-siamo") || document.getElementById("coming-soon");
+        contentDiv.innerHTML = "<p>" + text + "</p>";
+    }
+
+    function filterProducts() {
+        var input, filter, container, images, description, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        container = document.getElementsByClassName("content")[0];
+        images = container.getElementsByClassName("image-container");
+
+        for (i = 0; i < images.length; i++) {
+            description = images[i].getElementsByClassName("image-description")[0];
+            txtValue = description.textContent || description.innerText;
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                images[i].style.display = "";
+            } else {
+                images[i].style.display = "none";
+            }
+        }
+    }
+
+    function playAudio() {
+        var audio = document.getElementById('audioPlayer');
+        audio.play();
+    }
+
+    function playAudio2() {
+        var audio = document.getElementById('aodio');
+        audio.play();
+    }
+
+</script>
+
+<footer>© Enricozon 2023</footer>
+
+</body>
+</html>
