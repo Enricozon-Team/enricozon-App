@@ -15,6 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="D9b-ep-pzr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.125490196078431" green="0.125490196078431" blue="0.125490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchStoryboard" translatesAutoresizingMaskIntoConstraints="NO" id="iYZ-9v-5Hh">
                                 <rect key="frame" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
@@ -23,9 +24,16 @@
                                     <constraint firstAttribute="height" secondItem="iYZ-9v-5Hh" secondAttribute="width" multiplier="1:1" id="Mm8-k9-9MT"/>
                                 </constraints>
                             </imageView>
+                            
+                            <!-- Add the activity indicator below the image -->
+                            <activityIndicatorView translatesAutoresizingMaskIntoConstraints="NO" id="activityIndicator">
+                                <constraints>
+                                    <constraint firstItem="activityIndicator" firstAttribute="centerX" secondItem="D9b-ep-pzr" secondAttribute="centerX" id="activityCenterX"/>
+                                    <constraint firstItem="activityIndicator" firstAttribute="top" secondItem="iYZ-9v-5Hh" secondAttribute="bottom" constant="16" id="activityTop"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dYV-re-gbJ"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iYZ-9v-5Hh" firstAttribute="centerX" secondItem="D9b-ep-pzr" secondAttribute="centerX" id="Ef5-2N-LmO"/>
                             <constraint firstItem="iYZ-9v-5Hh" firstAttribute="centerY" secondItem="D9b-ep-pzr" secondAttribute="centerY" id="FrD-jR-dlm"/>
