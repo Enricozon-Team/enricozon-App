@@ -27,15 +27,13 @@ header img {
 }
 
 .product-image {
-    flex: 1 1 50%;
-    max-width: 50%;
-    margin-right: -500px; /* Adjust the margin to move it more to the right */
+    flex: 50%;
 }
 
 .product-image img {
     width: 100%;
     max-width: 450px;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
 }
 
@@ -64,7 +62,7 @@ header img {
 }
 
 .img1 {
-    height: 550px;
+    height: 500px;
     width: 500px;
 }
 
