@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successful Purchase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+    <link rel="stylesheet" href="css/buy.css">
+
+<style>
+    .p1 {
+    font-size: 1em; 
+    }    
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html""><a href="index.html"><img src="immagini/paccoenricozon.png" alt="Success Image"></a></a>
+        <h1>Grazie per l'aquisto!</h1>
+        <p>Il tuo ordine è stato completato con sucesso.</p>
+        
+        <div class="share-buttons">
+            <div class="share-button" onclick="shareOnWhatsApp()"><i class="fab fa-whatsapp"></i></div>
+            <div class="share-button" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i></div>
+        </div>
+
+        <div>
+            <a href="index.html">
+               <button>Torna Indietro</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+
+    function shareOnTwitter() {
+        window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Ho appena comprato su Enricozon. Che aspetti a visitare enricozon! https://enricozon.mom'));
+    }
+
+    function shareOnWhatsApp() {
+            window.open('whatsapp://send?text=' + encodeURIComponent('Ho appena comprato su Enricozon. Che aspetti a visitare enricozon! https://enricozon.mom'));
+    }
+</script>
+
+</body>
+</html>
