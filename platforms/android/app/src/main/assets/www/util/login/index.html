@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script>
+        function redirectToLink() {
+            window.location.href = 'https://enricozon.mom';
+        }
+    </script>
+</head>
+<body>
+    <button2 class="open-btn" onclick="openNav()">☰</button2>
+
+<div class="sidebar" id="mySidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+    <a href="https://enricozon.mom">Home</a>
+    <a href="https://instagram.com/enricozon">Instagram</a>
+    <a href="https://whatsapp.com/channel/0029Va8G3gGAu3aM27dYtF1V">WhatsApp</a>
+    <a href="mailto:support@enricozon.mom">Contattaci</a>
+    <a href="https://enricozon.mom/util/time/index.html">Time Machine</a>
+    <a href="https://enricozon.mom/util/bottoni/bottoni.html">Link Utili</a>
+    <a href="https://enricozon.mom/game/index.html">MiniGame</a>
+</div>
+    <div class="login-container">
+        <h2>Login Enricozon</h2>
+        <form onsubmit="redirectToLink(); return false;">
+            <input type="text" id="username" placeholder="username" required>
+            <input type="password" id="password" placeholder="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mySidebar").style.paddingLeft = "20px";
+            document.getElementById("mySidebar").style.transition = "0.5s";
+            document.getElementsByClassName("content")[0].style.marginLeft = "250px";
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mySidebar").style.paddingLeft = "0";
+            document.getElementsByClassName("content")[0].style.marginLeft= "0";
+        }
+    
+        function showText(text) {
+            var contentDiv = document.getElementById("chi-siamo") || document.getElementById("coming-soon");
+            contentDiv.innerHTML = "<p>" + text + "</p>";
+        }
+    
+        function filterProducts() {
+            var input, filter, container, images, description, i, txtValue;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            container = document.getElementsByClassName("content")[0];
+            images = container.getElementsByClassName("image-container");
+    
+            for (i = 0; i < images.length; i++) {
+                description = images[i].getElementsByClassName("image-description")[0];
+                txtValue = description.textContent || description.innerText;
+    
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    images[i].style.display = "";
+                } else {
+                    images[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
